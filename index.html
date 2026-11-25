@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Demandas levantadas para o Módulo de Instrução de Destinações que ainda não entraram em nenhuma história de usuário.">
+<title>Backlog do Módulo de Instrução</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<style>
+  :root{
+    --ground:#FAFBFC; --surface:#FFFFFF; --surface-2:#EDF2F7;
+    --ink:#121C26; --muted:#4D5D6E; --rule:#CFDAE4;
+    --accent:#1B4D7E; --open:#A2570F;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#0E1419; --surface:#161E26; --surface-2:#1F2A33;
+      --ink:#EAF1F7; --muted:#A6B5C2; --rule:#2F3B46;
+      --accent:#8EC0EC; --open:#E8AE6B;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#0E1419; --surface:#161E26; --surface-2:#1F2A33;
+    --ink:#EAF1F7; --muted:#A6B5C2; --rule:#2F3B46;
+    --accent:#8EC0EC; --open:#E8AE6B;
+  }
+
+  *{box-sizing:border-box}
+  body{
+    background:var(--ground); color:var(--ink);
+    font-family:"Source Sans 3","Helvetica Neue",Arial,sans-serif;
+    font-size:19px; line-height:1.65; margin:0; padding:52px 24px 90px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:900px;margin:0 auto;display:flex;flex-direction:column;gap:34px}
+
+  h1{
+    font-family:Newsreader,Georgia,serif;font-weight:600;
+    font-size:clamp(32px,4.4vw,44px);line-height:1.12;letter-spacing:-.01em;
+    text-wrap:balance;margin:0 0 14px;
+  }
+  .intro{font-size:19px;color:var(--muted);max-width:62ch;margin:0}
+  .meta{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13px;color:var(--muted);
+    margin:20px 0 0;padding-top:15px;border-top:2px solid var(--rule);
+  }
+
+  .item{
+    background:var(--surface);
+    border:1px solid var(--rule);
+    border-left:5px solid var(--accent);
+    padding:28px 30px;
+    display:flex;flex-direction:column;gap:18px;
+  }
+  .item-head{display:flex;flex-direction:column;gap:10px}
+  .num{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:13px;letter-spacing:.12em;color:var(--muted);
+  }
+  h2{
+    font-family:Newsreader,Georgia,serif;font-weight:600;
+    font-size:27px;line-height:1.22;margin:0;text-wrap:balance;
+  }
+  .bloco{display:flex;flex-direction:column;gap:7px}
+  .rot{
+    font-weight:700;font-size:13.5px;letter-spacing:.09em;
+    text-transform:uppercase;color:var(--muted);
+  }
+  .item p{margin:0;max-width:66ch}
+  .demanda{font-size:19.5px}
+  .contexto{color:var(--muted);font-size:17.5px}
+  .contexto strong{color:var(--ink);font-weight:600}
+
+  .chip{
+    align-self:flex-start;
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:12.5px;letter-spacing:.06em;
+    color:var(--open);border:1.5px solid var(--open);
+    padding:3px 11px;border-radius:3px;
+  }
+
+  footer{
+    border-top:2px solid var(--rule);padding-top:18px;
+    font-size:15px;color:var(--muted);
+    display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:space-between;
+  }
+  footer .sig{font-weight:600;color:var(--ink)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Backlog do Módulo de Instrução</h1>
+    <p class="intro">Demandas levantadas por Juarez que ainda não entraram em nenhuma história de usuário. Lista viva: ele dita, eu anoto. Cada item traz a demanda como foi formulada, o que já se sabe a respeito e o que precisa ser decidido. <strong>Aberto</strong> é o que ainda não foi discutido com a equipe; <strong>adiado</strong> é o que já foi levantado e empurrado para depois — a data diz quando surgiu.</p>
+    <p class="meta">CGGES · Escritório de Processos · atualizado em 17/11/2026 · 11 itens</p>
+  </header>
+
+  <article class="item">
+    <div class="item-head">
+      <span class="num">ITEM 01</span>
+      <h2>Cancelamento de uma destinação</h2>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">A demanda</span>
+      <p class="demanda">Precisamos tratar o cancelamento de uma destinação. Como é que se faz o cancelamento de uma destinação?</p>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">O que já se sabe</span>
+      <p class="contexto">O módulo <strong>só tem caminho de avanço</strong>. As cinco situações — aguardando instrução, indicação do imóvel, diagnóstico, análise de viabilidade e concluído — são todas de progresso, e a conclusão trava todos os steps em leitura. Não existe cancelar, arquivar nem interromper.</p>
+      <p class="contexto">O Portal de Serviços tem <strong>cancelar requerimento</strong>, na análise de documentos. Mas cancelar uma <em>destinação</em> é outra coisa: é posterior e alcança um ato já praticado.</p>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">Em aberto</span>
+      <p class="contexto">Cancelar a destinação é ato do Módulo de Instrução, do Módulo de Destinação ou do Portal? Em que momento pode ocorrer — antes da decisão, depois do ato autorizativo, depois do contrato? E o que acontece com a instrução já produzida.</p>
+    </div>
+
+    <span class="chip">ABERTO · 16/11/2026</span>
+  </article>
+
+  <article class="item">
+    <div class="item-head">
+      <span class="num">ITEM 02</span>
+      <h2>Importar os dados do PAI</h2>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">A demanda</span>
+      <p class="demanda">Ver se conseguimos importar os dados do sistema PAI — Proposta de Aquisição de Imóveis.</p>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">O que já se sabe</span>
+      <p class="contexto">Nada ainda nesta pasta. O PAI não aparece em nenhuma história de usuário, em nenhuma reunião registrada nem no dicionário do projeto — <strong>é a primeira vez que entra</strong>.</p>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">Em aberto</span>
+      <p class="contexto">Confirmar o nome e o escopo do sistema, quem é o responsável, que dados interessam à instrução e em que etapa entrariam. E se a origem é o próprio PAI ou a réplica no Data Lake.</p>
+    </div>
+
+    <span class="chip">ABERTO · 16/11/2026</span>
+  </article>
+
+  <article class="item">
+    <div class="item-head">
+      <span class="num">ITEM 03</span>
+      <h2>Referenciar as outras destinações do mesmo imóvel</h2>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">A demanda</span>
+      <p class="demanda">Quando o mesmo imóvel tiver várias destinações cadastradas, referenciá-las. São duas perguntas diferentes, e o nome precisa distingui-las: <strong>se há outros interessados no imóvel</strong> e <strong>se há outros processos de destinação que têm o imóvel como objeto</strong>.</p>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">O que já se sabe</span>
+      <p class="contexto">A US06 tem hoje <strong>uma pergunta só</strong> — “Há outros interessados no(s) imóvel(is)?” — de sim ou não, sem campo para referenciar nada.</p>
+      <p class="contexto">E a seção <em>Destinações ativas</em> traz os contratos ativos <strong>do interessado</strong>, vindos do MGC — não os processos de destinação em curso <strong>sobre o imóvel</strong>.</p>
+      <p class="contexto">Em 04/09 ficou registrado o risco que esse item resolve: as destinações ativas mostram só contratos, não as utilizações nem os processos em fase de contratação. Ficou combinado um texto de aviso para que ninguém ofertasse um imóvel que já está sendo destinado. <strong>Este item é a resposta estruturada àquele aviso.</strong></p>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">Em aberto</span>
+      <p class="contexto">De onde vêm os outros processos de destinação — do próprio módulo, do Módulo de Destinação, das utilizações? Como se chamam as duas perguntas, e o que cada uma exibe: apenas sinaliza, ou lista e permite abrir.</p>
+    </div>
+
+    <span class="chip">ABERTO · 16/11/2026</span>
+  </article>
+
+
+  <article class="item">
+    <div class="item-head">
+      <span class="num">ITEM 04</span>
+      <h2>Conceituação do imóvel: fica ou sai</h2>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">A demanda</span>
+      <p class="demanda">Decidir, em definitivo, se o campo <em>Conceituação do imóvel</em> permanece no cadastro mínimo ou sai de vez.</p>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">O que já se sabe</span>
+      <p class="contexto">Em 31/08/2026 a decisão foi <strong>retirar</strong> — “vamos tirar essa conceituação aí, ela escreve nas observações” —, e Daniel confirmou que sumiria do cadastro mínimo. <strong>Você reservou a palavra final</strong> para depois de receber as regras e o Figma.</p>
+      <p class="contexto">A US04 saiu sem o campo. Mas o <code>prototipo-cadastro-imovel.html</code>, de 10/09, <strong>reintroduziu</strong> a conceituação com a lista de nove valores do projeto.</p>
+      <p class="contexto">Registrado na mesma discussão: o SPUnet não tem campo chamado conceituação — trabalha com <em>tipo de imóvel</em>, <em>forma de incorporação</em> e <em>detalhamento da forma de incorporação</em>. “Conceituação” é campo do SIAPA. Se ficar, a orientação foi usar o que existe no SPUnet Cadastro, sem criar domínio próprio.</p>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">Em aberto</span>
+      <p class="contexto">Fica ou sai. Se ficar, com quais valores, e com a confirmação da CGINC que estava pendente.</p>
+    </div>
+
+    <span class="chip">ADIADO · levantado em 31/08/2026</span>
+  </article>
+
+  <article class="item">
+    <div class="item-head">
+      <span class="num">ITEM 05</span>
+      <h2>Matriz regime × natureza jurídica × uso</h2>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">A demanda</span>
+      <p class="demanda">Montar a matriz que associa o regime de destinação, a natureza jurídica do interessado e o uso imobiliário, para o sistema restringir as combinações possíveis.</p>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">O que já se sabe</span>
+      <p class="contexto">Pedida por Claudson em 15/09/2026, que ficou de montá-la. Hoje o regime de destinação é <strong>campo livre</strong>: a única coisa travada é a relação entre uso imobiliário e uso específico.</p>
+      <p class="contexto">Com a natureza jurídica vindo da Receita, Claudson observou que dá para restringir bastante — “nem sempre é um para um, mas a gente já consegue limitar”.</p>
+      <p class="contexto"><strong>Você foi contra incluir nesta versão:</strong> atrasaria pelo menos duas semanas, e vira regra permanente — um cálculo errado se propaga. Em 23/09, a reunião sobre o diagnóstico voltou ao tema, falando em bloquear destinações incompatíveis.</p>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">Em aberto</span>
+      <p class="contexto">Quando entra, quem monta a matriz, e se ela restringe de fato ou apenas alerta.</p>
+    </div>
+
+    <span class="chip">ADIADO · levantado em 15/09/2026</span>
+  </article>
+
+  <article class="item">
+    <div class="item-head">
+      <span class="num">ITEM 06</span>
+      <h2>Cadastro mínimo ampliado</h2>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">A demanda</span>
+      <p class="demanda">Ampliar o cadastro mínimo do imóvel sem RIP com os campos que você levantou no diagnóstico completo, para o analista já registrar ali o que depois terá de lançar no SPUnet Cadastro.</p>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">O que já se sabe</span>
+      <p class="contexto">Em 04/09/2026 ficou combinado acrescentar “cinco, seis campos” não obrigatórios, incluindo a <strong>situação da LPM</strong>. O protótipo que você enviou em 10/09 tem cerca de trinta campos em cinco seções.</p>
+      <p class="contexto">Em 15/09 ficou decidido que o MVP sai com o cadastro mínimo <strong>como combinado</strong>, e o restante “ficou para ser avaliado” — possivelmente ao final, sem atrasar a entrega.</p>
+      <p class="contexto">Daniel alertou que, virando um formulário com mais de dez campos, a tela precisa de redesenho, não só de campos novos.</p>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">Em aberto</span>
+      <p class="contexto">Quais campos entram, em que momento, e se a tela é redesenhada ou se o formulário vira modal à parte.</p>
+    </div>
+
+    <span class="chip">ADIADO · levantado em 04/09/2026</span>
+  </article>
+
+  <article class="item">
+    <div class="item-head">
+      <span class="num">ITEM 07</span>
+      <h2>Painel de atribuição de processos por técnico</h2>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">A demanda</span>
+      <p class="demanda">Dar à coordenação-geral uma visão de quem está com cada processo e de quanto volume cada técnico acumula.</p>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">O que já se sabe</span>
+      <p class="contexto">Pedido por você em 28/08/2026: “quando chega aqui, acumula muito processo por servidor… às vezes tem cara com uns trinta ao mesmo tempo”. Hoje esse controle é feito por aplicativos avulsos, para o Thiago e para o Lúcio.</p>
+      <p class="contexto">A equipe anotou e respondeu que ficaria <strong>no radar</strong>, fora do escopo inicial. É a razão de não haver responsável nem atribuição na grade de requerimentos.</p>
+      <p class="contexto">Sem isso, a fila é aberta dentro da UF e o único mecanismo de trabalho é a consulta diária.</p>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">Em aberto</span>
+      <p class="contexto">Se vira funcionalidade do módulo ou painel à parte; se há atribuição formal de processo a servidor ou apenas visualização.</p>
+    </div>
+
+    <span class="chip">ADIADO · levantado em 28/08/2026</span>
+  </article>
+
+  <article class="item">
+    <div class="item-head">
+      <span class="num">ITEM 08</span>
+      <h2>GeoVisão: camadas e restrições no mapa</h2>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">A demanda</span>
+      <p class="demanda">Usar o GeoVisão para consultar camadas e restrições sobre o imóvel — áreas protegidas, manguezais, terras indígenas e demais incidências.</p>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">O que já se sabe</span>
+      <p class="contexto">Listado entre os itens <strong>conscientemente posteriores ao MVP</strong> na consolidação de 18/08/2026.</p>
+      <p class="contexto">Voltou em 02/09, com a pendência de consultar <strong>Ícaro</strong> sobre a chave única do GeoVisão para a integração geoespacial, e de novo em 23/09, na reunião do diagnóstico.</p>
+      <p class="contexto">Hoje o mapa do módulo mostra ponto e polígono do cadastro, e permite desenhar quando não há geometria — mas não consulta camada nenhuma.</p>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">Em aberto</span>
+      <p class="contexto">A consulta a Ícaro sobre a chave do GeoVisão, e se a integração é de leitura ou se as camadas entram como dado do diagnóstico.</p>
+    </div>
+
+    <span class="chip">ADIADO · levantado em 18/08/2026</span>
+  </article>
+
+  <article class="item">
+    <div class="item-head">
+      <span class="num">ITEM 09</span>
+      <h2>Destinação de ofício, sem requerimento</h2>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">A demanda</span>
+      <p class="demanda">Permitir abrir uma destinação por iniciativa da SPU, sem requerimento prévio no Portal de Serviços.</p>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">O que já se sabe</span>
+      <p class="contexto">Listado entre os itens posteriores ao MVP em 18/08/2026.</p>
+      <p class="contexto">Toca a premissa de todo o desenho atual: o módulo recebe requerimentos importados do Portal, e a instrução começa pelo Step 1, que é o requerimento em leitura. <strong>Sem requerimento, não há por onde entrar.</strong></p>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">Em aberto</span>
+      <p class="contexto">Por onde esse processo nasce, o que preenche o lugar do Step 1, e se a situação inicial é a mesma.</p>
+    </div>
+
+    <span class="chip">ADIADO · levantado em 18/08/2026</span>
+  </article>
+
+  <article class="item">
+    <div class="item-head">
+      <span class="num">ITEM 10</span>
+      <h2>Consulta pública do estágio do requerimento</h2>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">A demanda</span>
+      <p class="demanda">Permitir que qualquer pessoa consulte o estágio do requerimento, sem autenticação.</p>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">O que já se sabe</span>
+      <p class="contexto">Listado entre os itens posteriores ao MVP em 18/08/2026.</p>
+      <p class="contexto">Conversa com a diretriz de 13/08: ao requerente se comunicam <strong>decisões</strong>, não fases operacionais. Indicação, diagnóstico e viabilidade são atividades internas e não viram marcos externos.</p>
+      <p class="contexto">O canal do requerente continua sendo o Portal de Serviços — reafirmado na mudança de direção de 01/10.</p>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">Em aberto</span>
+      <p class="contexto">O que exatamente seria público: o andamento do requerimento no Portal, ou as etapas da instrução. E como isso se concilia com a diretriz de não expor fase operacional.</p>
+    </div>
+
+    <span class="chip">ADIADO · levantado em 18/08/2026</span>
+  </article>
+
+  <article class="item">
+    <div class="item-head">
+      <span class="num">ITEM 11</span>
+      <h2>NotificaBR e conversa com o CEMPR</h2>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">A demanda</span>
+      <p class="demanda">Integrar o NotificaBR para as comunicações com o requerente, e retomar a discussão com o CEMPR.</p>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">O que já se sabe</span>
+      <p class="contexto">Listado entre os itens posteriores ao MVP em 18/08/2026.</p>
+      <p class="contexto">Em 31/08 você observou que, com o NotificaBR, <strong>o Portal seria melhor que o SEI para comunicar</strong> — teria comprovação de notificação e poderia usar WhatsApp. Hoje o Portal dispara e-mail; em vez disso, dispararia o Notifica.</p>
+      <p class="contexto">Na mesma conversa: você foi à reunião do NotificaBR e <strong>não havia ninguém do Portal de Serviços</strong>. Há também o Contrato Serpro 65/2025, registrado no projeto do Portal, com a pendência de saber se canais fora do WhatsApp são selecionáveis individualmente.</p>
+    </div>
+
+    <div class="bloco">
+      <span class="rot">Em aberto</span>
+      <p class="contexto">Quem conduz do lado do Portal, e se a integração é do Portal ou do módulo — hoje a comunicação posterior à carga sai pelo e-mail do SEI.</p>
+    </div>
+
+    <span class="chip">ADIADO · levantado em 18/08/2026</span>
+  </article>
+
+  <footer>
+    <span class="sig">CGGES — Escritório de Processos</span>
+    <span>Módulo de Instrução de Destinações · SPUnet Gestão</span>
+  </footer>
+
+</div>
+</body>
+</html>
